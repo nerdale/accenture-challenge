@@ -5806,56 +5806,6 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
-
-/*.thumb{
-     height: 300px;
-     border: 1px solid #000;
-     margin: 10px 5px 0 0;
-}*/
-#list img {
-  max-width: 100px;
-  height: 70px;
-  display: block;
-  margin-top: 1%;
-  position: relative;
-  left: 4%; }
-
-#lista {
-  position: relative;
-  left: 2%; }
-
-#deleteImgs {
-  display: none; }
-
-.element {
-  display: inline-flex;
-  align-items: center; }
-
-i.fa-camera {
-  margin: 10px;
-  cursor: pointer;
-  font-size: 30px; }
-
-i:hover {
-  opacity: 0.6; }
-
-input {
-  display: none; }
-
-.descripcion {
-  width: 16%;
-  position: absolute;
-  left: 29%;
-  margin-top: 2%; }
-
-.checkbox {
-  position: relative;
-  left: 5%;
-  top: 3.5%; }
-
-i.fa-camera {
-  font-size: 52px; }
-=======
 #fondo {
   height: 100vh;
   background-image: url(../img/fondo.png);
@@ -5890,12 +5840,11 @@ i.fa-camera {
   margin-left: 62px;
   margin-top: -1700px; }
 
-p, .fa-camera {
-  color: #DFE21A;
+p .fa-camera {
+  color: red;
   margin-left: 7%;
   font-size: 100px;
-  display: inline-block;
-  margin-top: -70px; }
+  display: inline-block; }
 
 .fa-map {
   font-size: 100px;
@@ -5930,10 +5879,5 @@ p, .fa-camera {
   height: 100px;
   width: 50px;
   font-size: 10px; }
-
-.fb_iframe_widget span {
-  top: 500px;
-  margin-left: 60px; }
-
 
 /*# sourceMappingURL=main.css.map */
