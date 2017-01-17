@@ -5840,12 +5840,11 @@ button.close {
   margin-left: 62px;
   margin-top: -1700px; }
 
-p, .fa-camera {
-  color: #DFE21A;
+p .fa-camera {
+  color: red;
   margin-left: 7%;
   font-size: 100px;
-  display: inline-block;
-  margin-top: -70px; }
+  display: inline-block; }
 
 .fa-map {
   font-size: 100px;
