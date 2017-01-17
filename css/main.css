@@ -5812,7 +5812,7 @@ button.close {
      margin: 10px 5px 0 0;
 }*/
 #list img {
-  max-width: 125px;
+  max-width: 100px;
   height: 70px;
   display: block;
   margin-top: 1%;
@@ -5844,13 +5844,13 @@ input {
 .descripcion {
   width: 16%;
   position: absolute;
-  left: 26%;
-  margin-top: -4%; }
+  left: 29%;
+  margin-top: 2%; }
 
 .checkbox {
   position: absolute;
-  left: 41%;
-  top: 20%; }
+  left: 42%;
+  top: 5.5%; }
 
 i.fa-camera {
   font-size: 52px; }

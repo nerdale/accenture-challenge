@@ -51,19 +51,22 @@ function addImage(imgData){
 
 function displayImgData(imgData){
 	var lista=  document.getElementById('list')
+	var div=document.createElement('div');
+	div.setAttribute("class","row");
 	var span = document.createElement('div');
 	span.setAttribute("id"," imagenes ");
-	span.setAttribute("class"," row ");
-	span.innerHTML = '<img class="thumb col-xs-5" src="' + imgData + '"/>';
+	span.setAttribute("class","col-xs-5");
+	span.innerHTML = '<img class="thumb " src="' + imgData + '"/>';
 	var descrip= document.createElement('input');
 	descrip.setAttribute("type", "text");
 	descrip.setAttribute("class","form-control col-xs-5 descripcion");
 	var check=document.createElement('input');
 	check.setAttribute('type','checkbox');
 	check.setAttribute("class","col-xs-2 checkbox");
-	lista.appendChild(span);
-	lista.appendChild(descrip);
-	lista.appendChild(check);
+	div.appendChild(span)
+	div.appendChild(descrip);
+	div.appendChild(check);
+	list.appendChild(div);
   	//agrega el div con la imagen al span
   	
 
