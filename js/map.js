@@ -25,7 +25,7 @@ function initialize() {
   var marker = new google.maps.Marker({
     position: ubicacion,
     map: map,
-    title: 'Foto'
+    title: 'Foto' 
   });
   marker.addListener('click', function() {
     infowindow.open(map, marker);
