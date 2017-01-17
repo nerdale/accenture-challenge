@@ -26,9 +26,10 @@ p, .fa-camera{
   margin-left: 7%;
   font-size: 100px;
   display: inline-block;
+  margin-top: -70px;
 }
  .fa-map{
-  font-size: 100px;
+  font-size: 100px ;
   margin-left: 563%;
   display:inline-block;
 }
@@ -48,4 +49,7 @@ p, .fa-camera{
 .form-group{
   width:88%;
   margin-left:40px;
+}
+.fa{
+  font-size: 20px !important;
 }

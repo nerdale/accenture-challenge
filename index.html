@@ -2,26 +2,25 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Mi paseo</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Accenture Challenge</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-social.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-<div class="container-fluid">
-<!--SECCION LOGIN-->
-<div class="col-xs-12">
-	<div class="row">
-		<div id="fondo"></div>
+	<div class="container-fluid">
+		<!--SECCION LOGIN-->
+		<div class="col-xs-12">
+			<div class="row">
+				<div id="fondo">
+					<div class="fb-login-button botonFcb" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="true"></div>
+					<div id="status"></div>
+				</div>
+			</div>
+		</div>
 	</div>
-</div>
-
-
-	<div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="true"></div>
-
-<div id="status">
-</div>
-
-<script>
+		<script>
 		// This is called with the results from from FB.getLoginStatus().
 		function statusChangeCallback(response) {
 			console.log('statusChangeCallback');
@@ -33,17 +32,17 @@
 				if (response.status === 'connected') {
 						// Logged into your app and Facebook.
 						testAPI();
-				} else if (response.status === 'not_authorized') {
+					} else if (response.status === 'not_authorized') {
 						// The person is logged into Facebook, but not your app.
 						document.getElementById('status').innerHTML = 'Please log ' +
 						'into this app.';
-				} else {
+					} else {
 						// The person is not logged into Facebook, so we're not sure if
 						// they are logged into this app or not.
 						document.getElementById('status').innerHTML = 'Please log ' +
 						'into Facebook.';
+					}
 				}
-		}
 
 		// This function is called when someone finishes with the Login
 		// Button.  See the onlogin handler attached to it in the sample
@@ -61,7 +60,7 @@
 		// the session
 				xfbml      : true,  // parse social plugins on this page
 				version    : 'v2.8' // use graph api version 2.8
-		});
+			});
 
 		// Now that we've initialized the JavaScript SDK, we call 
 		// FB.getLoginStatus().  This function gets the state of the
@@ -79,7 +78,7 @@
 			statusChangeCallback(response);
 		});
 
-};
+	};
 
 		// Load the SDK asynchronously
 		(function(d, s, id) {
@@ -100,7 +99,7 @@
 				'Thanks for logging in, ' + response.name + '!';
 			});
 		}
-</script>
+	</script>
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 	<script src="https://use.fontawesome.com/832bae2e01.js"></script>
